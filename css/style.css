@@ -1,5 +1,13 @@
 .slide-home {
-    height: 400px;
     background: #4896b9;
     color: #fff;
+}
+.height-demo {
+    height: 400px;
+}
+.color1 {
+    background: #f2f2f2;
+}
+.color2 {
+    background: #ccc;
 }
