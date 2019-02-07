@@ -1,13 +1,90 @@
+@font-face {
+    font-family: 'Gill Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('fonts/Gill Sans Regular'), url('../fonts/Gill Sans.woff') format('woff');
+}
+@font-face {
+    font-family: 'Gill Sans';
+    font-style: italic;
+    font-weight: 400;
+    src: local('Gill Sans Italic'), url('../fonts/Gill Sans Italic.woff') format('woff');
+}
+@font-face {
+    font-family: 'Gill Sans';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Gill Sans Light'), url('../fonts/Gill Sans Light.woff') format('woff');
+}
+@font-face {
+    font-family: 'Gill Sans';
+    font-style: italic;
+    font-weight: 300;
+    src: local('Gill Sans Light Italic'), url('../fonts/Gill Sans Light Italic.woff') format('woff');
+}
+@font-face {
+    font-family: 'Gill Sans';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Gill Sans Medium'), url('../fonts/Gill Sans Medium.woff') format('woff');
+}
+@font-face {
+    font-family: 'Gill Sans';
+    font-style: italic;
+    font-weight: 500;
+    src: local('Gill Sans Medium Italic'), url('../fonts/Gill Sans Medium Italic.woff') format('woff');
+}
+@font-face {
+    font-family: 'Gill Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Gill Sans Bold'), url('../fonts/Gill Sans Bold.woff') format('woff');
+}
+@font-face {
+    font-family: 'Gill Sans';
+    font-style: italic;
+    font-weight: 700;
+    src: local('Gill Sans Bold Italic'), url('../fonts/Gill Sans Bold Italic.woff') format('woff');
+}
+@font-face {
+    font-family: 'Gill Sans';
+    font-style: normal;
+    font-weight: 900;
+    src: local('Gill Sans Heavy'), url('../fonts/Gill Sans Heavy.woff') format('woff');
+}
+@font-face {
+    font-family: 'Gill Sans';
+    font-style: italic;
+    font-weight: 900;
+    src: local('Gill Sans Heavy Italic'), url('../fonts/Gill Sans Heavy Italic.woff') format('woff');
+}
+
+body {
+    font-family: 'Gill Sans';
+}
+.md-header {
+    background: #FFC600;
+}
+
+.md-header .nav-item {
+    text-transform: uppercase;
+}
+
+
+
 .slide-home {
     background: #4896b9;
     color: #fff;
 }
+
 .height-demo {
     height: 400px;
 }
+
 .color1 {
     background: #f2f2f2;
 }
+
 .color2 {
     background: #ccc;
 }
