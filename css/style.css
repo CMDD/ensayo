@@ -1,3 +1,200 @@
+body {
+    font-family: 'Gill Sans';
+    color: #00263A;
+}
+p {
+    font-size: 1.2rem;
+}
+h3 {
+    font-size: 2rem;
+    color: #00447D;
+}
+a.read-more {
+    display: inline-block;
+    position: relative;
+    color: #00447D;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    font-weight: 500;
+    text-decoration: none;
+    padding: .5rem 1.4rem .1rem 0;
+}
+a.read-more svg {
+    position: absolute;
+    fill: #00447D;
+    right: 0;
+    top: 50%;
+    margin-top: -.4rem;
+}
+
+.md-header {
+    background: #FFC600;
+}
+.md-header {
+    color: #fff;
+}
+.md-header a, .navbar-light .navbar-nav .nav-link {
+    position: relative;
+    color: #00263A;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: rgba(0, 38, 58, 0.7);
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: #00263A;
+    font-style: normal;
+}
+.md-header .nav-item {
+    font-style: italic;
+    font-weight: 700;
+    font-size: .9em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.icon-social:hover {
+    opacity: .8;
+}
+.slide-home {
+    background-image: url(../img/slide-example.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+}
+.has-border-white {
+    position: relative;
+    background: #ffffff;
+}
+.has-border-white:before, .has-border-white:after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 60px;
+    background-repeat: repeat-x;
+    background-size: cover;
+}
+.has-border-white:before {
+    top: -59px;
+    background-image: url('../img/texture-top.svg');
+    background-position: left bottom;
+}
+.has-border-white:after {
+    bottom: -59px;
+    background-image: url('../img/texture-bottom.svg');
+    background-position: left top;
+}
+
+.bg-yellow {
+    background: #FFC600;
+    color: #00263A;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.has-border-blue {
+    position: relative;
+    background: #00447D;
+}
+.has-border-blue:before {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 70px;
+    top: -69px;
+    background-image: url('../img/texture-top-blue.svg');
+    background-position: left bottom;
+    background-repeat: repeat-x;
+    background-size: cover;
+}
+
+.md-banner-blue {
+    background: #147599;
+    color: #fff;
+    border-radius: 50px;
+    text-transform: uppercase;
+}
+.md-banner-blue h2 {
+    position: relative;
+    font-size: 1rem;
+    line-height: 1.5;
+    background: #003868;
+    padding: .5rem .7rem .1rem .7rem;
+    border-radius: 5rem;
+}
+
+.md-banner-blue h2 svg {
+    position: absolute;
+    fill: #fff;
+    right: .7rem;
+    top: 50%;
+    margin-top: -8px;
+}
+
+.md-banner-blue ul {
+    padding-left: .7rem;
+    margin-bottom: 0;
+    list-style: none;
+}
+.md-banner-blue li {
+    margin-bottom: .5rem;
+}
+.md-banner-blue a {
+    color: #fff;
+}
+
+@media (min-width:992px){
+
+    .nav-item.active a:after {
+        content: '';
+        border-bottom-style: solid;
+        border-bottom-width: 2px;
+        position: absolute;
+        bottom: .3rem;
+        height: 2px;
+        left: .5rem;
+        right: .5rem;
+    }
+
+    .has-border-white:before {
+        height: 80px;
+        top: -79px;
+    }
+    .has-border-white:after {
+        height: 80px;
+        bottom: -79px;
+    }
+
+    .bg-yellow {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .has-border-blue:before {
+        height: 100px;
+        top: -99px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.height-demo {
+    height: 300px;
+}
+
+
+
 @font-face {
     font-family: 'Gill Sans';
     font-style: normal;
@@ -57,39 +254,4 @@
     font-style: italic;
     font-weight: 900;
     src: local('Gill Sans Heavy Italic'), url('../fonts/Gill Sans Heavy Italic.woff') format('woff');
-}
-
-body {
-    font-family: 'Gill Sans';
-}
-.md-header {
-    background: #FFC600;
-}
-
-.md-header .nav-item {
-    font-style: italic;
-    font-weight: 700;
-    font-size: .9em;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-}
-
-
-
-
-.slide-home {
-    background: #4896b9;
-    color: #fff;
-}
-
-.height-demo {
-    height: 400px;
-}
-
-.color1 {
-    background: #f2f2f2;
-}
-
-.color2 {
-    background: #ccc;
 }
