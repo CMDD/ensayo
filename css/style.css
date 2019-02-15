@@ -5,6 +5,12 @@ body {
 p {
     font-size: 1.2rem;
 }
+h2.subtitle {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    letter-spacing: 4px;
+}
 h3 {
     font-size: 2rem;
     color: #00447D;
@@ -26,14 +32,13 @@ a.read-more svg {
     top: 50%;
     margin-top: -.4rem;
 }
-
-.md-header {
+.header {
     background: #FFC600;
 }
-.md-header {
+.header {
     color: #fff;
 }
-.md-header a, .navbar-light .navbar-nav .nav-link {
+.header a, .navbar-light .navbar-nav .nav-link {
     position: relative;
     color: #00263A;
 }
@@ -44,7 +49,7 @@ a.read-more svg {
     color: #00263A;
     font-style: normal;
 }
-.md-header .nav-item {
+.header .nav-item {
     font-style: italic;
     font-weight: 700;
     font-size: .9em;
@@ -63,6 +68,8 @@ a.read-more svg {
 .has-border-white {
     position: relative;
     background: #ffffff;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 .has-border-white:before, .has-border-white:after {
     content: '';
@@ -87,8 +94,8 @@ a.read-more svg {
 .bg-yellow {
     background: #FFC600;
     color: #00263A;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 
 .has-border-blue {
@@ -108,13 +115,77 @@ a.read-more svg {
     background-size: cover;
 }
 
-.md-banner-blue {
+.banner-blue {
     background: #147599;
     color: #fff;
-    border-radius: 50px;
+    border-radius: 40px;
+    padding: 2rem;
+}
+.banner-blue a {
+    color: #fff;
+}
+.banner-blue a:hover {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+
+.menu-accordion, ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+.menu-accordion ul {
+    padding-left: .7rem;
+}
+.menu-accordion >li >a {
     text-transform: uppercase;
 }
-.md-banner-blue h2 {
+.menu-accordion a {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    padding: .5rem .7rem .1rem .7rem;
+    background: transparent;
+    -webkit-transition: all .3s ease;
+            transition: all .3s ease;
+}
+.menu-accordion .has-children >a:before {
+    content: '';
+    position: absolute;
+    width: 14px;
+    height: 8px;
+    right: .7rem;
+    top: .8rem;
+    background-size: cover;
+	background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMi40NTgiIGhlaWdodD0iMTMuNjU3IiB2aWV3Qm94PSIwIDAgMjIuNDU4IDEzLjY1NyI+PHBhdGggZD0iTS0zMjEwLjctMTQwMS4yNzZhMi4wNDMsMi4wNDMsMCwwLDAsMC0yLjhsLTUuODIzLTYuMTYzYTEuNjUzLDEuNjUzLDAsMCwxLS4xNjctMi4wOTEsMi41NTgsMi41NTgsMCwwLDEsMy45NDEtLjI2NWw3LjI2Nyw3LjY5MmEzLjI0NiwzLjI0NiwwLDAsMSwwLDQuNDU5bC03LjI2Nyw3LjY5MmEyLjU1OSwyLjU1OSwwLDAsMS0zLjk0MS0uMjY1LDEuNjU0LDEuNjU0LDAsMCwxLC4xNjctMi4wOTFaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTM5MS40NDkgMzIxNy41NTcpIHJvdGF0ZSg5MCkiIGZpbGw9IiNmZmYiIHN0cm9rZT0icmdiYSgyNDcsMjQ3LDI0NywwKSIgc3Ryb2tlLXdpZHRoPSIxIi8+PC9zdmc+);
+    -webkit-transition: all .3s ease;
+            transition: all .3s ease;
+}
+
+.menu-accordion .has-children.opened >a:before {
+    -webkit-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+}
+
+.menu-accordion .opened >a {
+    background: #003868;
+    border-radius: 5rem;
+}
+.menu-accordion .opened >a:hover {
+    color: #fff;
+}
+.menu-accordion .has-children ul {
+    display: none;
+}
+.menu-accordion .opened >ul {
+    display: block;
+}
+
+
+
+
+
+.banner-blue h2 {
     position: relative;
     font-size: 1rem;
     line-height: 1.5;
@@ -123,7 +194,7 @@ a.read-more svg {
     border-radius: 5rem;
 }
 
-.md-banner-blue h2 svg {
+.banner-blue h2 svg {
     position: absolute;
     fill: #fff;
     right: .7rem;
@@ -131,16 +202,16 @@ a.read-more svg {
     margin-top: -8px;
 }
 
-.md-banner-blue ul {
-    padding-left: .7rem;
+
+
+.banner-blue img {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.banner-blue p {
+    font-size: 1rem;
     margin-bottom: 0;
-    list-style: none;
-}
-.md-banner-blue li {
-    margin-bottom: .5rem;
-}
-.md-banner-blue a {
-    color: #fff;
 }
 
 @media (min-width:992px){
@@ -166,8 +237,8 @@ a.read-more svg {
     }
 
     .bg-yellow {
-        padding-top: 80px;
-        padding-bottom: 80px;
+        padding-top: 120px;
+        padding-bottom: 120px;
     }
 
     .has-border-blue:before {
@@ -189,9 +260,6 @@ a.read-more svg {
 
 
 
-.height-demo {
-    height: 300px;
-}
 
 
 

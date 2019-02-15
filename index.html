@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <div class="container-fluid md-header">
+    <div class="container-fluid header">
         <nav class="container navbar navbar-expand-lg navbar-light">
             <a class="navbar-brand mr-auto mr-lg-5" href="#"><img src="img/logo.svg" width="180" alt="Red de Emisoras Minuto de Dios"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,63 +51,107 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-md-5 col-lg-3 py-4">
-                        <div class="md-banner-blue py-5 px-4">
-                        <h2>Contenido<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 28.657 22.458"><g transform="translate(559.817 -1646.498)"><path class="a" d="M-3210.7-1401.276a2.043,2.043,0,0,0,0-2.8l-5.823-6.163a1.653,1.653,0,0,1-.167-2.091,2.558,2.558,0,0,1,3.941-.265l7.267,7.692a3.246,3.246,0,0,1,0,4.459l-7.267,7.692a2.559,2.559,0,0,1-3.941-.265,1.654,1.654,0,0,1,.167-2.091Z" transform="translate(2657.739 3060.405)"/><path class="a" d="M-3210.7-1401.276a2.043,2.043,0,0,0,0-2.8l-5.823-6.163a1.653,1.653,0,0,1-.167-2.091,2.558,2.558,0,0,1,3.941-.265l7.267,7.692a3.246,3.246,0,0,1,0,4.459l-7.267,7.692a2.559,2.559,0,0,1-3.941-.265,1.654,1.654,0,0,1,.167-2.091Z" transform="translate(2672.739 3060.405)"/></g></svg></h2>
-                            <ul>
-                                <li><a href="#">Eventos</a></li>
-                                <li><a href="#">Librerías</a></li>
-                                <li><a href="#">Donaciones</a></li>
-                                <li><a href="#">Señal en vivo</a></li>
-                                <li><a href="#">Shalom</a></li>
+                        <div class="banner-blue py-5 px-4">
+
+                            <ul class="menu-accordion">
+                                <li class="has-children opened">
+                                    <a href="#">Contenido</a>
+                                    <ul>
+                                        <li><a href="#">Eventos</a></li>
+                                        <li><a href="#">Librerías</a></li>
+                                        <li><a href="#">Donaciones</a></li>
+                                        <li><a href="#">Señal en vivo</a></li>
+                                        <li><a href="#">Shalom</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Evangelización</a></li>
+                                <li><a href="#">Vivir mejor</a></li>
+                                <li><a href="#">Hablemos de fe</a></li>
+                                <li><a href="#">Formación</a></li>
+                                <li><a href="#">Editorial</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Noticias</a></li>
                             </ul>
-                        <input type="text">
+
+                            <input type="text">
+
                         </div>
                     </div>
                     <div class="col-md-7 col-lg-9 pl-lg-5 py-4">
                         <h3>Evangelización</h3>
                         <p>Todos los años queremos que haya algo nuevo en la decoración navideña, algo de acuerdo a nuestra personalidad y nuestros gustos. Por eso te hemos traído estos tutoriales para que cambies esa decoración y coloques nuevos elementos, realizados con mucho amor y creatividad. Todos los años queremos que haya algo nuevo en la decoración navideña, algo de acuerdo a nuestra personalidad y nuestros gustos. Por eso te hemos traído estos tutoriales para que cambies esa decoración y coloques nuevos elementos, realizados con mucho amor y creatividad.</p>
-                        <a href="#" class="read-more">Seguir leyendo<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 28.657 22.458"><g transform="translate(559.817 -1646.498)"><path class="a" d="M-3210.7-1401.276a2.043,2.043,0,0,0,0-2.8l-5.823-6.163a1.653,1.653,0,0,1-.167-2.091,2.558,2.558,0,0,1,3.941-.265l7.267,7.692a3.246,3.246,0,0,1,0,4.459l-7.267,7.692a2.559,2.559,0,0,1-3.941-.265,1.654,1.654,0,0,1,.167-2.091Z" transform="translate(2657.739 3060.405)"/><path class="a" d="M-3210.7-1401.276a2.043,2.043,0,0,0,0-2.8l-5.823-6.163a1.653,1.653,0,0,1-.167-2.091,2.558,2.558,0,0,1,3.941-.265l7.267,7.692a3.246,3.246,0,0,1,0,4.459l-7.267,7.692a2.559,2.559,0,0,1-3.941-.265,1.654,1.654,0,0,1,.167-2.091Z" transform="translate(2672.739 3060.405)"/></g></svg></a>
+                        <a href="#" class="read-more">Seguir leyendo<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 28.657 22.458">
+                                <g transform="translate(559.817 -1646.498)">
+                                    <path class="a" d="M-3210.7-1401.276a2.043,2.043,0,0,0,0-2.8l-5.823-6.163a1.653,1.653,0,0,1-.167-2.091,2.558,2.558,0,0,1,3.941-.265l7.267,7.692a3.246,3.246,0,0,1,0,4.459l-7.267,7.692a2.559,2.559,0,0,1-3.941-.265,1.654,1.654,0,0,1,.167-2.091Z" transform="translate(2657.739 3060.405)" />
+                                    <path class="a" d="M-3210.7-1401.276a2.043,2.043,0,0,0,0-2.8l-5.823-6.163a1.653,1.653,0,0,1-.167-2.091,2.558,2.558,0,0,1,3.941-.265l7.267,7.692a3.246,3.246,0,0,1,0,4.459l-7.267,7.692a2.559,2.559,0,0,1-3.941-.265,1.654,1.654,0,0,1,.167-2.091Z" transform="translate(2672.739 3060.405)" />
+                                </g>
+                            </svg></a>
                     </div>
                 </div>
             </div>
         </div>
         <div class="row bg-yellow">
-            <div class="container height-demo">
-                <div class="row">
-                    <h2>Noticias</h2>
-                </div>
+            <div class="container" style="height: 400px;">
+                <h2 class="subtitle">Noticias</h2>
             </div>
         </div>
         <div class="row has-border-white">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-3 height-demo">
-                        Contenido
+                    <div class="col-md-4 py-3 px-xl-5">
+                        <div class="banner-blue">
+                            <img src="img/banner-example.jpg">
+                            <p>Todos los años queremos que haya algo nuevo en la decoración navideña, algo de acuerdo a nuestra personalidad y nuestros gustos.</p>
+                        </div>
                     </div>
-                    <div class="col-md-9 height-demo">
-                        Contenido general
+                    <div class="col-md-4 py-3 px-xl-5">
+                        <div class="banner-blue">
+                            <img src="img/banner-example.jpg">
+                            <p>Todos los años queremos que haya algo nuevo en la decoración navideña, algo de acuerdo a nuestra personalidad y nuestros gustos.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 py-3 px-xl-5">
+                        <div class="banner-blue">
+                            <img src="img/banner-example.jpg">
+                            <p>Todos los años queremos que haya algo nuevo en la decoración navideña, algo de acuerdo a nuestra personalidad y nuestros gustos.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="row bg-yellow">
-            <div class="container height-demo">
+            <div class="container">
+                <div>
+                    <h2 class="subtitle">Redes sociales</h2>
+                </div>
                 <div class="row">
-                    <h2>Noticias</h2>
+                    <div class="col-md-4 py-3 px-xl-5">
+                        <div style="height: 400px; background: #fff;">
+                        </div>
+                    </div>
+                    <div class="col-md-4 py-3 px-xl-5">
+                        <div style="height: 400px; background: #fff;">
+                        </div>
+                    </div>
+                    <div class="col-md-4 py-3 px-xl-5">
+                        <div style="height: 400px; background: #fff;">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <div class="container-fluid">
         <div class="row has-border-blue">
-            <div class="col height-demo">
+            <div class="col" style="height: 400px;">
                 <h2>FOOTER</h2>
             </div>
         </div>
     </div>
 
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
 
 </body>
 
