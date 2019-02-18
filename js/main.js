@@ -4,6 +4,16 @@ $.support.transition = false;
 
 $(document).ready(function () {
 
+
+    $('.slide-home').slick({
+        accessibility: false
+    });
+
+    $('.news-slide').slick({
+        adaptiveHeight: true,
+        accessibility: false
+    });
+
     $(".menu-accordion .has-children >a").click(function (e) {
 
         e.preventDefault();
