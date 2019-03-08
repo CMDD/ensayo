@@ -30,4 +30,10 @@ $(document).ready(function () {
         }
     });
 
+    $(".widget .title").click(function(){
+        $(this).next().slideToggle(300, function(){
+            $(this).parent().toggleClass('active', $(this).is(':visible'));
+        });
+    });
+
 });
