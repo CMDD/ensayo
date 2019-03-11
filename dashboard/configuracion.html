@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Administrador</title>
-<link rel="stylesheet" href="css/main.css" type='text/css' media='all'>
+    <link rel="stylesheet" href="css/main.css" type='text/css' media='all'>
+    <link rel="stylesheet" href="css/configuracion.css" type='text/css' media='all'>
     <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
 </head>
 
@@ -19,14 +20,14 @@
             </div>
             <div class="menu">
                 <ul>
-                    <li class="item active"><a href="index.html">Inicio</a></li>
+                    <li class="item"><a href="index.html">Inicio</a></li>
                     <li class="item"><a href="articulos.html">Artículos</a></li>
                     <li class="item"><a href="#">Eventos</a></li>
-                    <li class="item"><a href="configuracion.html">Configuración</a></li>
+                    <li class="item active"><a href="configuracion.html">Configuración</a></li>
                 </ul>
             </div>
             <div class="bottom">
-
+                APPS
             </div>
         </div>
 
@@ -34,7 +35,8 @@
             <div class="topbar">
                 <div class="show-nav"></div>
                 <div class="tabs">
-                    <span>Inicio</span>
+                    <span>Configuración:</span>
+                    <a href="#" class="active">General</a>
                 </div>
 
                 <div class="user dropdown">
@@ -58,10 +60,20 @@
                     </div>
                 </div>
                 <div class="sidebar">
-                    <div class="widget active">
-                        <div class="title">Widget</div>
+                    <div class="widget sections active">
+                        <div class="title">Secciones</div>
                         <div class="content">
-                            Widget
+                            <label><input type="checkbox" disabled checked>Contenido</label>
+                            <div class="child"><label><input type="checkbox">Evangelización</label><span class="delete"></span></div>
+                            <div class="child"><label><input type="checkbox" checked>Formación</label><span class="delete"></span></div>
+                            <div class="child"><label><input type="checkbox">Editorial</label><span class="delete"></span></div>
+
+                            <a href="#" class="add">Agregar sección</a>
+
+                            <label><input type="checkbox">Eventos</label>
+                            <label><input type="checkbox" checked>Real Audio</label>
+                            <label><input type="checkbox" checked>Donaciones</label>
+                            <label><input type="checkbox" checked>Contacto</label>
                         </div>
                     </div>
                 </div>

@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Administrador</title>
-<link rel="stylesheet" href="css/main.css" type='text/css' media='all'>
+    <link rel="stylesheet" href="css/main.css" type='text/css' media='all'>
+    <link rel="stylesheet" href="css/articulos.css" type='text/css' media='all'>
     <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
 </head>
 
@@ -19,8 +20,8 @@
             </div>
             <div class="menu">
                 <ul>
-                    <li class="item active"><a href="index.html">Inicio</a></li>
-                    <li class="item"><a href="articulos.html">Artículos</a></li>
+                    <li class="item"><a href="index.html">Inicio</a></li>
+                    <li class="item active"><a href="articulos.html">Artículos</a></li>
                     <li class="item"><a href="#">Eventos</a></li>
                     <li class="item"><a href="configuracion.html">Configuración</a></li>
                 </ul>
@@ -34,7 +35,10 @@
             <div class="topbar">
                 <div class="show-nav"></div>
                 <div class="tabs">
-                    <span>Inicio</span>
+                    <span>Artículos:</span>
+                    <a href="#">Todos</a>
+                    <a class="active" href="#">Nuevo</a>
+                    <a href="#">Tags</a>
                 </div>
 
                 <div class="user dropdown">
@@ -53,15 +57,35 @@
             </div>
             <div class="content">
                 <div class="maincolumn">
-                    <div class="box">
-
+                    <div class="box editor">
+                        <input class="title" type="text" placeholder="Título">
+                        <label class="url">https://minutodedios.fm/<input type="text" placeholder="url"></label>
+                        <textarea rows="20"></textarea>
                     </div>
                 </div>
                 <div class="sidebar">
                     <div class="widget active">
-                        <div class="title">Widget</div>
+                        <div class="title">Publicación</div>
                         <div class="content">
-                            Widget
+                            <a href="#" class="btn"><span>Publicar</span></a>
+                        </div>
+                    </div>
+                    <div class="widget">
+                        <div class="title">Categorías</div>
+                        <div class="content">
+                            Lista de categorías...
+                        </div>
+                    </div>
+                    <div class="widget">
+                        <div class="title">Tags</div>
+                        <div class="content">
+                            Lista de etiquetas...
+                        </div>
+                    </div>
+                    <div class="widget">
+                        <div class="title">Otra cosa</div>
+                        <div class="content">
+                            Otra cosa...
                         </div>
                     </div>
                 </div>

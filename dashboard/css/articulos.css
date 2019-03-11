@@ -1,0 +1,22 @@
+.maincolumn .editor .title {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    font-size: 2rem;
+    font-weight: 500;
+}
+.maincolumn .editor .url {
+    display: block;
+    margin: 5px 10px 30px 10px;
+    font-size: .9rem;
+    white-space: nowrap;
+    cursor: pointer;
+}
+.maincolumn .editor .url input {
+    display: inline-block;
+    max-width: 300px;
+    font-size: inherit;
+    padding: 5px 0;
+    border: 0;
+    text-decoration: underline;
+}

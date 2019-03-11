@@ -28,11 +28,14 @@ input[type=text], textarea {
     font-weight: 400;
     font-size: 1rem;
 }
+input[type=checkbox] {
+    margin-right: 5px;
+}
 input:hover, input:focus, textarea:hover, textarea:focus {
     outline: none;
     border-color: #c1c1c1;
 }
-input[type=text]:focus
+
 .dropdown {
     position: relative;
 }
@@ -276,33 +279,11 @@ input[type=text]:focus
 .maincolumn .box {
     display: block;
     margin: auto;
-    max-width: 900px;
+    max-width: 1000px;
     min-width: 500px;
     background: #fff;
     border: 1px solid #dadada;
     padding: 20px;
-}
-.maincolumn .editor .title {
-    border-top: 0;
-    border-left: 0;
-    border-right: 0;
-    font-size: 2rem;
-    font-weight: 500;
-}
-.maincolumn .editor .url {
-    display: block;
-    margin: 5px 10px 30px 10px;
-    font-size: .9rem;
-    white-space: nowrap;
-    cursor: pointer;
-}
-.maincolumn .editor .url input {
-    display: inline-block;
-    max-width: 300px;
-    font-size: inherit;
-    padding: 5px 0;
-    border: 0;
-    text-decoration: underline;
 }
 
 .sidebar {
