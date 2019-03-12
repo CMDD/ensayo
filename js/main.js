@@ -4,15 +4,18 @@ $.support.transition = false;
 
 $(document).ready(function () {
 
+    if ($('.slide-home').length){
+        $('.slide-home').slick({
+            accessibility: false
+        });
+    }
 
-    $('.slide-home').slick({
-        accessibility: false
-    });
-
-    $('.news-slide').slick({
-        adaptiveHeight: true,
-        accessibility: false
-    });
+    if ($('.news-slide').length){
+        $('.news-slide').slick({
+            adaptiveHeight: true,
+            accessibility: false
+        });
+    }
 
     $(".menu-accordion .has-children >a").click(function (e) {
 

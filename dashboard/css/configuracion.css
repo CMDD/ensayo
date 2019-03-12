@@ -57,8 +57,11 @@
 }
 .widget.sections .temp >div {
     display: table-cell;
+    vertical-align: middle;
 }
 .widget.sections .temp input[type=text] {
+    width: 95%;
+    margin-right: 5%;
     padding: 0;
     line-height: 20px;
     border: 0;
