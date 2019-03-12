@@ -5,6 +5,13 @@ body {
 p {
     font-size: 1.2rem;
 }
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1 {
+    color: #00447D;
+}
 h2.subtitle {
     text-align: center;
     text-transform: uppercase;
@@ -62,13 +69,13 @@ a.readmore:hover {
     opacity: .8;
 }
 
-.has-border-white {
+.has-border-white, .has-border-white-bottom {
     position: relative;
     background: #ffffff;
     padding-top: 40px;
     padding-bottom: 40px;
 }
-.has-border-white:before, .has-border-white:after {
+.has-border-white:before, .has-border-white:after, .has-border-white-bottom:after {
     content: '';
     position: absolute;
     z-index: 1;
@@ -82,7 +89,7 @@ a.readmore:hover {
     background-image: url('../img/texture-top.svg');
     background-position: left bottom;
 }
-.has-border-white:after {
+.has-border-white:after, .has-border-white-bottom:after {
     bottom: -59px;
     background-image: url('../img/texture-bottom.svg');
     background-position: left top;
@@ -114,7 +121,7 @@ a.readmore:hover {
 }
 
 .banner-blue {
-    max-width: 300px;
+    max-width: 400px;
     background: #147599;
     color: #fff;
     border-radius: 40px;
@@ -130,8 +137,10 @@ a.readmore:hover {
 .banner-blue img {
     margin-bottom: 2rem;
     width: 100%;
-    max-width: 100%;
-    height: auto;
+}
+.banner-blue h3 {
+    color: #fff;
+    font-size: 1.5rem;
 }
 .banner-blue p {
     font-size: 1rem;
@@ -215,10 +224,6 @@ textarea {
 .footer .col-right {
     padding-top: 3rem;
 }
-.footer img {
-    max-width: 100%;
-    height: auto;
-}
 .footer h3 {
     color: #fff;
     font-weight: 400;
@@ -285,6 +290,10 @@ textarea {
 
 @media (min-width: 768px){
 
+    .banner-blue {
+        max-width: 300px;
+    }
+
     .footer .col-left {
         text-align: right;
         border-right: 2px solid #fff;
@@ -317,7 +326,7 @@ textarea {
         height: 80px;
         top: -79px;
     }
-    .has-border-white:after {
+    .has-border-white:after, .has-border-white-bottom:after {
         height: 80px;
         bottom: -79px;
     }
@@ -329,8 +338,6 @@ textarea {
         height: 100px;
         top: -99px;
     }
-
-
 
 }
 

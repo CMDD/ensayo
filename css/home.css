@@ -53,10 +53,6 @@
             transform: translate(0, -50%);
     text-align: center;
 }
-.slide-home .content img {
-    max-width: 100%;
-    height: auto;
-}
 .slide-home .content .button {
     display: inline-block;
     background: #003868;
@@ -92,8 +88,6 @@
 }
 .news-slide .image img {
     width: 100%;
-    max-width: 100%;
-    height: auto;
 }
 .news-slide .slick-prev, .news-slide .slick-next {
     width: 20px;
