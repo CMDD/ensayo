@@ -245,19 +245,19 @@
     padding: 0;
 }
 
-.save {
+.slide-add .save {
     display: none;
     flex: 0 0 auto;
     width: 100px;
     text-align: center;
     cursor: pointer;
 }
-.save svg {
+.slide-add .save svg {
     fill: #09ab51;
     height: 100px;
     -webkit-transition: all .3s ease;
             transition: all .3s ease;
 }
-.save:hover svg {
+.slide-add .save:hover svg {
     fill:#0090be;
 }
