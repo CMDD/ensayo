@@ -39,26 +39,6 @@ $(document).ready(function () {
     /**
      Scripts de configuración
     **/
-    $('.widget.sections').on('click', '.add:not(.disabled)', function(){
-
-        var box_html = $('<div class="child temp"><div><input type="checkbox"></div><div><input type="text"></div><div class="save disabled"><svg xmlns="http://www.w3.org/2000/svg" width="18" fill="#09ab51" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg></div></div>');
-        box_html.hide();
-        $(this).before(box_html);
-        box_html.fadeIn(300);
-        $(this).addClass('disabled');
-
-    });
-
-    $('.widget.sections').on('click', '.save:not(.disabled)', function(){
-
-        var value = $(this).parent().find('input[type=text]').val();
-        var check = $(this).parent().find('input[type=checkbox]');
-        var checked = check.is(":checked") ? ' checked' : '';
-
-        $(this).parent().next().removeClass('disabled');
-        $(this).parent().replaceWith('<div class="child"><label><input type="checkbox"'+ checked +'>'+ value +'</label><span class="delete"></span></div>');
-
-    });
 
     $('.widget.sections').on('keyup', '.temp input[type=text]', function(){
 
