@@ -7,13 +7,11 @@
     padding: 10px 15px;
     margin-bottom: 5px;
 }
-
 .widget.sections .child, .widget.sections .add {
     position: relative;
     display: block;
     padding: 8px 25px 8px 35px;
 }
-
 .widget.sections .delete {
     position: absolute;
     display: block;
@@ -48,7 +46,6 @@
     opacity: .4;
     cursor:not-allowed;
 }
-
 .widget.sections .temp {
     position: relative;
     display: table;
@@ -69,4 +66,198 @@
 }
 .widget.sections .temp .save:not(.disabled) svg {
     cursor: pointer;
+}
+
+
+
+.slide .slick-slide {
+    position: relative;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+}
+.slick-prev, .slick-next {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    width: 20px;
+    height: 60px;
+    display: block;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-transition: all .3s ease;
+            transition: all .3s ease;
+}
+.slick-prev {
+    left: 10px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60.759 104.471'%3E%3Cpath d='M-3186.664-1354.915a9.85,9.85,0,0,0,0-13.526l-28.081-29.719a7.97,7.97,0,0,1-.808-10.082,12.337,12.337,0,0,1,19-1.279l35.045,37.091a15.654,15.654,0,0,1,0,21.5l-35.045,37.091a12.338,12.338,0,0,1-19-1.277,7.973,7.973,0,0,1,.808-10.084Z' transform='translate(-3156.728 -1309.443) rotate(180)' fill='rgba(255, 255, 255, 0.8)' /%3E%3C/svg%3E");
+}
+.slick-next {
+    right: 10px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60.759 104.471'%3E%3Cpath d='M-3186.664-1354.915a9.85,9.85,0,0,0,0-13.526l-28.081-29.719a7.97,7.97,0,0,1-.808-10.082,12.337,12.337,0,0,1,19-1.279l35.045,37.091a15.654,15.654,0,0,1,0,21.5l-35.045,37.091a12.338,12.338,0,0,1-19-1.277,7.973,7.973,0,0,1,.808-10.084Z' transform='translate(3217.487 1413.914)' fill='rgba(255, 255, 255, 0.8)' /%3E%3C/svg%3E");
+}
+.slick-prev:hover, .slick-next:hover {
+    opacity: .85;
+}
+.slick-prev:focus, .slick-next:focus {
+    outline: none;
+}
+.slide .button {
+    position: absolute;
+    left: 100px;
+    bottom: 100px;
+    background: #003868;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px 20px 10px 20px;
+    letter-spacing: 4px;
+    border-radius: 50px;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+.slide .button:hover {
+    background: rgba(0, 56, 104, 0.85);
+}
+
+
+.slide-items {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px 0;
+    background: #f7f7f7;
+}
+.slide-items .item {
+    position: relative;
+    flex: 0 0 auto;
+    width: 25%;
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+    border: 5px solid #f7f7f7;
+}
+.slide-items .item .delete {
+    position: absolute;
+    display: block;
+    width: 16px;
+    height: 16px;
+    top: 5px;
+    right: 5px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='%23a71816' viewBox='0 0 24 24'%3E%3Cpath d='M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z'/%3E%3C/svg%3E");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    opacity: 0;
+    -webkit-transition: all .3s ease;
+            transition: all .3s ease;
+}
+.slide-items .item:hover .delete {
+    opacity: 1;
+}
+
+.slide-add {
+    display: none;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background: #f7f7f7;
+}
+
+.add {
+    flex: 0 0 auto;
+    width: 25%;
+}
+.add .inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+    top: 0;
+	z-index: -1;
+}
+.add .inputfile + label {
+    position: relative;
+    display: block;
+    height: 100px;
+    border: 5px solid #f7f7f7;
+    color: white;
+    background-color: #0090be;
+    text-align: center;
+    -webkit-transition: all .3s ease;
+            transition: all .3s ease;
+}
+.add .inputfile + label:hover {
+    background-color: #09ab51;
+}
+.add .inputfile + label {
+	cursor: pointer;
+}
+.add .inputfile + label span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 80%;
+}
+
+.options {
+    display: none;
+    flex: 1;
+    padding: 0 20px;
+}
+.options >label {
+    display: inline-block;
+}
+.options .inputs {
+    display: none;
+    margin-top: 15px;
+}
+.options .inputs.show {
+    display: flex;
+}
+.options .inputs label {
+    flex: 1;
+    display: flex;
+}
+.options .inputs input {
+    width: 97%;
+    max-width: 200px;
+    margin-left: 3%;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid #dadada;
+    padding: 0;
+}
+
+.save {
+    display: none;
+    flex: 0 0 auto;
+    width: 100px;
+    text-align: center;
+    cursor: pointer;
+}
+.save svg {
+    fill: #09ab51;
+    height: 100px;
+    -webkit-transition: all .3s ease;
+            transition: all .3s ease;
+}
+.save:hover svg {
+    fill:#0090be;
 }
