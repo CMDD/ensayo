@@ -174,11 +174,11 @@
     background: #f7f7f7;
 }
 
-.add {
+.slide-add .add {
     flex: 0 0 auto;
     width: 25%;
 }
-.add .inputfile {
+.slide-add .inputfile {
 	width: 0.1px;
 	height: 0.1px;
 	opacity: 0;
@@ -187,7 +187,7 @@
     top: 0;
 	z-index: -1;
 }
-.add .inputfile + label {
+.slide-add .inputfile + label {
     position: relative;
     display: block;
     height: 100px;
@@ -198,13 +198,13 @@
     -webkit-transition: all .3s ease;
             transition: all .3s ease;
 }
-.add .inputfile + label:hover {
+.slide-add .inputfile + label:hover {
     background-color: #09ab51;
 }
-.add .inputfile + label {
+.slide-add .inputfile + label {
 	cursor: pointer;
 }
-.add .inputfile + label span {
+.slide-add .inputfile + label span {
     position: absolute;
     top: 50%;
     left: 50%;
