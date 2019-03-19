@@ -1,3 +1,7 @@
+.content form {
+    display: flex;
+    flex: 1;
+}
 .maincolumn .editor .title {
     border-top: 0;
     border-left: 0;
