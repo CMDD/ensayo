@@ -72,7 +72,7 @@ $(document).ready(function () {
                     fileName = e.target.value.split( '\\' ).pop();
                     label.find( 'span' ).html(fileName);
 
-                    options.fadeIn();
+                    options.fadeIn(300);
 
                 }
             });
