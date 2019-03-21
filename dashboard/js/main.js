@@ -2,6 +2,7 @@ var $ = jQuery;
 
 $(document).ready(function () {
 
+    /** MOSTRAR OCULTAR PANEL **/
     $("#nav .hide-nav").click(function (e) {
         e.preventDefault();
         $('#nav').addClass('collapsed');
@@ -14,6 +15,7 @@ $(document).ready(function () {
         $(this).removeClass('show');
     });
 
+    /** MENU DE USUARIO **/
     $(".dropdown .open").click(function () {
         var content = $(this).next();
         if ( content.is(":visible") ) {
@@ -30,15 +32,32 @@ $(document).ready(function () {
         }
     });
 
+    /** WIDGETS **/
     $(".widget .title").click(function(){
         $(this).next().slideToggle(300, function(){
             $(this).parent().toggleClass('active', $(this).is(':visible'));
         });
     });
 
-    /**
-     Scripts de configuración
-    **/
+    /** IMAGEN DESTACADA **/
+    $( '.image .inputfile' ).each( function() {
+
+        var label = $(this).next('label'),
+            options = $(this).parent().parent().find('.options, .save');
+
+        $(this).on( 'change', function( e ) {
+
+            var fileName = '';
+            if( e.target.value ) {
+                fileName = e.target.value.split( '\\' ).pop();
+                label.find( 'span' ).html(fileName);
+                options.fadeIn(300);
+            }
+        });
+
+    });
+
+    /** CONFIGURACIÓN **/
 
     $('.widget.sections').on('keyup', '.temp input[type=text]', function(){
 
@@ -66,15 +85,12 @@ $(document).ready(function () {
             $(this).on( 'change', function( e ) {
 
                 var fileName = '';
-
                 if( e.target.value ) {
-
                     fileName = e.target.value.split( '\\' ).pop();
                     label.find( 'span' ).html(fileName);
-
                     options.fadeIn(300);
-
                 }
+
             });
 
         });

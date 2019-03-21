@@ -24,3 +24,75 @@
     border: 0;
     text-decoration: underline;
 }
+
+.image {
+    display: block;
+    margin-top: 20px;
+}
+.image span {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.image span em {
+    font-size: .8rem;
+    margin-left: 10px;
+}
+.image .inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+    top: 0;
+	z-index: -1;
+}
+.image .inputfile + label {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 100px;
+    height: 30px;
+    color: #fff;
+    font-size: .9rem;
+    border-radius: 5px;
+    background-color: #1bb0e2;
+    background: linear-gradient(135deg, #1bb0e2 30%, #35cc9b 100% );
+    text-align: center;
+    -webkit-transition: all .3s ease;
+            transition: all .3s ease;
+}
+.image .inputfile + label:hover {
+    background-color: #09ab51;
+
+}
+.image .inputfile + label {
+	cursor: pointer;
+}
+.image .inputfile + label span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 80%;
+}
+.image label span {
+    position: relative;
+}
+.image label:before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #1ebbf0 30%, #39dfaa 100% );
+    opacity: 0;
+    -webkit-transition: all .3s ease;
+            transition: all .3s ease;
+}
+.image label:hover:before {
+    opacity: 1;
+}
