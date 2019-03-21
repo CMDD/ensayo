@@ -288,6 +288,199 @@ textarea {
     background: #ffb100;
 }
 
+
+.player {
+    position: fixed;
+    z-index: 100;
+    top: 20%;
+    right: 0;
+    width: 300px;
+    overflow: hidden;
+    margin-right: -260px;
+    background: #003769;
+    border-radius: 20px 0 0 20px;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    -webkit-transition: all .4s ease;
+            transition: all .4s ease;
+}
+.player .mini {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40px;
+    padding: 15px 0;
+    background: #003769;
+    -webkit-transition: all .6s ease;
+            transition: all .6s ease;
+}
+.player .full {
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+}
+.player.opened {
+    margin-right: 0;
+}
+.player.opened .mini {
+    margin-left: -40px;
+}
+
+.player .head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.player .title {
+    padding: 3px 10px 0 10px;
+    flex: 0 0 auto;
+    white-space: nowrap;
+    line-height: 40px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+}
+.player .mini .title {
+    padding: 10px 3px 10px 0;
+    -ms-writing-mode: tb-rl;
+    -webkit-writing-mode: vertical-rl;
+    -moz-writing-mode: vertical-rl;
+    -ms-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+}
+
+.player .control, .player .btn-open, .player .btn-close {
+    display: block;
+    flex: 0 0 auto;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-transition: all .3s ease;
+            transition: all .3s ease;
+}
+.player .btn-open {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='51.961' height='39.562' viewBox='0 0 51.961 39.562' fill='%23ffffff'%3E%3Cg transform='translate(-4368 -4256)'%3E%3Crect width='30' height='5' rx='2' transform='translate(4389.961 4256.562)'/%3E%3Crect width='30' height='5' rx='2' transform='translate(4389.961 4273.562)'/%3E%3Crect width='50' height='5' rx='2' transform='translate(4369.961 4290.562)'/%3E%3Cpath d='M393.439-39.762l-11.4-11.4,11.4-11.4,3.121,3.121-8.278,8.278,8.278,8.278Z' transform='translate(3985.961 4318.562)'/%3E%3C/g%3E%3C/svg%3E");
+    background-size: 25px;
+}
+.player .btn-close {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='51.961' height='39.562' viewBox='0 0 51.961 39.562' fill='%23fff'%3E%3Cg transform='translate(-4368 -4256)'%3E%3Crect width='30' height='5' rx='2' transform='translate(4389.961 4256.562)'/%3E%3Crect width='30' height='5' rx='2' transform='translate(4389.961 4273.562)'/%3E%3Crect width='50' height='5' rx='2' transform='translate(4369.961 4290.562)'/%3E%3Cpath d='M393.439-39.762l-11.4-11.4,11.4-11.4,3.121,3.121-8.278,8.278,8.278,8.278Z' transform='translate(4764.56 4216.238) rotate(180)'/%3E%3C/g%3E%3C/svg%3E");
+    background-size: 25px;
+    margin-right: 0;
+    margin-left: auto;
+}
+.player .control.paused {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' fill='%23ffffff'%3E%3Cpath d='m256 0c-141.38 0-256 114.62-256 256s114.62 256 256 256 256-114.62 256-256-114.62-256-256-256zm88.48 269.57l-128 80c-2.59 1.617-5.535 2.43-8.48 2.43-2.668 0-5.34-0.664-7.758-2.008-5.086-2.82-8.242-8.172-8.242-13.992v-160c0-5.82 3.156-11.172 8.242-13.992 5.086-2.836 11.305-2.664 16.238 0.422l128 80c4.676 2.93 7.52 8.055 7.52 13.57s-2.844 10.641-7.52 13.57z'/%3E%3C/svg%3E");
+    background-size: 30px;
+}
+.player .control.played {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300.003 300.003' fill='%23ffffff'%3E%3Cpath d='m150 0c-82.838 0-150 67.159-150 150 0 82.838 67.162 150 150 150 82.843 0 150-67.165 150-150 0-82.841-67.155-150-150-150zm-15.591 194.54c0 9.498-7.7 17.198-17.198 17.198s-17.198-7.7-17.198-17.198v-89.078c0-9.498 7.7-17.198 17.198-17.198s17.198 7.7 17.198 17.198v89.078zm64.545 0c0 9.498-7.701 17.198-17.198 17.198-9.498 0-17.198-7.7-17.198-17.198v-89.078c0-9.498 7.7-17.198 17.198-17.198s17.198 7.7 17.198 17.198v89.078z'/%3E%3C/svg%3E");
+    background-size: 30px;
+}
+.player .control:hover, .player .btn-open:hover, .player .btn-close:hover {
+    opacity: .8;
+}
+.player .full .control.paused, .player .full .control.played {
+    width: 50px;
+    height: 50px;
+    background-size: 40px;
+}
+
+.player .list {
+    display: block;
+    margin: 30px 0 0 30px;
+}
+.player .list .item {
+    display: flex;
+}
+.player .list .hour {
+    flex: 0 0 70px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: .8rem;
+    font-weight: 300;
+}
+.player .list .name {
+    position: relative;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding: 10px 0 10px 20px;
+}
+.player .list .name:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: #fff;
+}
+.player .list .name:after {
+    content: '';
+    position: absolute;
+    left: -3px;
+    top: 50%;
+    margin-top: -6px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #fff;
+}
+.player .list >div:first-child {
+    color: rgba(255, 255, 255, 0.5);
+}
+.player .list >div:first-child .name:before {
+    background: linear-gradient(to top, #ffffff 40%, rgba(255, 255, 255, 0) 100% );
+    top: -20px;
+}
+.player .list .item.now .name {
+    color: #ffc800;
+    font-size: 1.2rem;
+}
+.player .list .item.now .hour {
+    color: #ffc800;
+}
+.player .list >div:last-child .name:before {
+    background: linear-gradient(to bottom, #ffffff 40%, rgba(255, 255, 255, 0) 100% );
+    bottom: -20px;
+}
+.player select {
+    -webkit-appearance: button;
+    -webkit-border-radius: 2px;
+    -webkit-padding-end: 20px;
+    -webkit-padding-start: 2px;
+    -webkit-user-select: none;
+    background-image: url(../img/arrow-select.svg);
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: 13px;
+    background-color: transparent;
+    color: #ffc800;
+    border: 0;
+    overflow: hidden;
+    padding-top: 3px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+    max-width: 200px;
+    margin: 10px auto 0 auto;
+    display: block;
+    cursor: pointer;
+}
+.player select:focus {
+    outline: none;
+}
+
 @media (min-width: 768px){
 
     .banner-blue {

@@ -249,6 +249,8 @@
     display: none;
     flex: 0 0 auto;
     width: 100px;
+    border: 0;
+    background: transparent;
     text-align: center;
     cursor: pointer;
 }
@@ -260,4 +262,7 @@
 }
 .slide-add .save:hover svg {
     fill:#0090be;
+}
+.slide-add .save:focus {
+    outline: none;
 }
