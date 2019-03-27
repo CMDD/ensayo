@@ -2,6 +2,12 @@ body {
     font-family: 'Gill Sans';
     color: #00263A;
 }
+a {
+    color: #137599;
+}
+a:hover {
+    color: #00447d;
+}
 p {
     font-size: 1.2rem;
 }
@@ -69,6 +75,10 @@ a.readmore:hover {
     opacity: .8;
 }
 
+.without-border {
+    padding-top: 40px;
+    padding-bottom: 120px;
+}
 .has-border-white, .has-border-white-bottom {
     position: relative;
     background: #ffffff;

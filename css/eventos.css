@@ -1,0 +1,94 @@
+.event {
+    background: #bc9640;
+    color: #fff;
+    margin-top: 20px;
+}
+.event-list >div:nth-child(even) {
+    background: #d3b362;
+}
+
+.event .image {
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+}
+
+.event span {
+    display: block;
+}
+.event .title {
+    padding: 20px 20px 10px 30px;
+    letter-spacing: 2px;
+    line-height: 1;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.event .month {
+    font-size: 1.1rem;
+}
+.event .day {
+    font-size: 3.5rem;
+}
+.event h2 {
+    font-size: 1.8rem;
+    margin: 10px 0 0 0;
+}
+
+.event .info {
+    padding: 0 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.event .info span {
+    padding: 10px 0 10px 30px;
+    text-align: left;
+    line-height: 1;
+    background-repeat: no-repeat;
+    background-position: left top 7px;
+    background-size: 20px;
+}
+.event .hour {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 24 24'%3E%3Cpath d='M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm1 12v-6h-2v8h7v-2h-5z'/%3E%3C/svg%3E");
+}
+.event .place {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 24 24'%3E%3Cpath d='M12 2c3.196 0 6 2.618 6 5.602 0 3.093-2.493 7.132-6 12.661-3.507-5.529-6-9.568-6-12.661 0-2.984 2.804-5.602 6-5.602m0-2c-4.198 0-8 3.403-8 7.602 0 4.198 3.469 9.21 8 16.398 4.531-7.188 8-12.2 8-16.398 0-4.199-3.801-7.602-8-7.602zm0 11c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3z'/%3E%3C/svg%3E");
+}
+.event .featuring {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 24 24'%3E%3Cpath d='M12 5.173l2.335 4.817 5.305.732-3.861 3.71.942 5.27-4.721-2.524-4.721 2.525.942-5.27-3.861-3.71 5.305-.733 2.335-4.817zm0-4.586l-3.668 7.568-8.332 1.151 6.064 5.828-1.48 8.279 7.416-3.967 7.416 3.966-1.48-8.279 6.064-5.827-8.332-1.15-3.668-7.569z'/%3E%3C/svg%3E");
+}
+
+.event .btn {
+    background: #fff;
+    color: #bc9640;
+    padding-top: .6rem;
+    margin-top: 20px;
+}
+
+.other-event p {
+    margin: 30px 0 0 0;
+    text-align: right;
+}
+
+@media (min-width: 576px){
+
+    .banner-blue {
+        margin-bottom: 6rem;
+    }
+
+    .event .image {
+        height: auto;
+    }
+    .event .info {
+        border-left: 1px solid #fff;
+        margin: 30px 0;
+    }
+
+}
+
+@media (min-width: 768px){
+
+    .banner-blue {
+        margin-bottom: 6rem;
+    }
+
+}
