@@ -153,6 +153,7 @@ input:hover, input:focus, textarea:hover, textarea:focus {
     display: flex;
     flex-direction: column;
     flex: 1;
+    min-width: 0;
     background: #f7f7f7;
 }
 
@@ -274,6 +275,7 @@ input:hover, input:focus, textarea:hover, textarea:focus {
 
 .maincolumn {
     flex: 1;
+    min-width: 0;
     padding: 40px 40px 0 40px;
 }
 
@@ -281,7 +283,6 @@ input:hover, input:focus, textarea:hover, textarea:focus {
     display: block;
     margin: auto;
     max-width: 1000px;
-    min-width: 500px;
     background: #fff;
     border: 1px solid #dadada;
     padding: 20px;
