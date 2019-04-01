@@ -44,30 +44,22 @@
     background-size: cover;
     background-position: center;
 }
-.slide-home .content {
+.slide-home .button {
     position: absolute;
-    top: 50%;
-    left: 30px;
-    right: 30px;
-    -webkit-transform: translate(0, -50%);
-            transform: translate(0, -50%);
-    text-align: center;
-}
-.slide-home .content .button {
+    left: 10%;
+    bottom: 20%;
     display: inline-block;
     background: #003868;
     color: #fff;
-    text-transform: uppercase;
     font-size: 1.2rem;
     padding: 11px 20px 2px 20px;
     letter-spacing: 4px;
     text-decoration: none;
     border-radius: 50px;
-    margin-top: 20px;
     -webkit-transition: all .3s ease;
             transition: all .3s ease;
 }
-.slide-home .content .button:hover {
+.slide-home .button:hover {
     background: rgba(0, 56, 104, 0.85);
 }
 
